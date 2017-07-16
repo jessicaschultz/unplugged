@@ -95,20 +95,78 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*Header*/
+header{
+  width: 100%;
+}
+#logo{
+  width: 100%;
+  margin: auto;
+}
+nav{
+  width: 100%;
+  margin: auto;
+}
+li{
+  width: 100%;
+  margin: auto;
+  list-style: none;
+}
 
+/*Main Content*/
+#main-content{
+  width: 96%;
+  padding: 0 2%;
+}
+.hero-area, .top-story{
+  width: 100%; 
+}
+.top-story img{
+  width: 100%;
+}
 
+/*sidebar*/
+.sidebar{
+  width: 100%;
+}
+.sidebar-upcoming, .sidebar-faq{
+  display: none;
+}
 
+/*Feed*/
+.feed{
+  width: 100%;
+}
+.feed-item{
+  clear: both;
+}
+.feed-item p{
+  display: none;
+}
+.feed-item img{
+  width: 45%;
+  float: left;
+}
+.feed-item-title{
+  width: 42%;
+  float: left;  
+}
 
+/*Detailed pages*/
+.reviews-story img, .news-story img{
+  width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
+/*Footer*/
+footer {
+  width: 100%;
+  margin: auto;
+  clear: both;
+}
+#footer-logo{
+  width: 47.5%;
+  margin: auto;
+}
 
 
 /* ==========================================================================
@@ -191,15 +249,65 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+@media screen and (min-width: 768px){
+/*Tablet*/
+  #logo{
+    width: 50%;
+    float: left;
+  }
+  nav{
+    width: 50%;
+    float: right;
+  }
+  li{
+    display: inline;
+    margin: auto 0 auto 8%;    
+  }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+/*Main section/top-*/
+  .top-story{
+    width: 100%
+  }
+  .top-story img{
+    width: 57%;
+    float: left;
+  }
+  .top-info{
+    width: 37%;
+    float: left;
+  }
+
+  /*sidebar*/
+  .sidebar{
+    width: 30%;
+    clear: both;
+    float: right;
+  }
+  .sidebar-upcoming, .sidebar-faq{
+    display: block;
+  }
+
+  /*Feed*/
+  .feed{
+    width: 60%;
+    float: left;
+  }
+  .feed-item img{
+    width: 35%;
+  }
+
+  /*Footer*/
+  footer {
+    width: 100%;
+    clear: both;
+  }
+  #footer-logo{
+    width: 30%;
+    margin: auto;
+  }
+
+@media screen and (min-width: 940px){
+/*Desktop*/
 }
 
 /* ==========================================================================
