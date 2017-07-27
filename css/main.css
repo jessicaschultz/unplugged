@@ -277,6 +277,28 @@ footer {
     float: left;
   }
 
+  .review-story img, .news-story img{
+    float: left;
+    width: 50%;
+    clear: both;
+  }
+  .review-detail-top-heading, .detail-top-heading{
+    width: 50%;
+    float: left;
+  }
+  .review-details, .review-details li, .news-details, .news-details li{
+    padding: 0 5% 0 0;
+    margin: 0;
+  }
+  .review-story-body, .story-body{
+    clear: both;
+    padding: 2% 0;
+  }
+  .review-detail-newsletter-signup, .news-detail-newsletter-signup{
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 2%;
+  }
   /*sidebar*/
   .sidebar{
     width: 30%;
