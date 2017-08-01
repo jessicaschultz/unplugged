@@ -94,23 +94,99 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*GLOBAL STYLES*/
+/* COLORS =============================================
+Dark Pink (Magenta): #b21e49;
+Light Grey: #eeeeee;
+Bright Pink: #ff1256;
+Dark Grey: #222222;
+Blue: #23a4cc;
+============================================= */
+body, html{
+	font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #eee;
+}
 
+a {
+  font-weight:700;
+  color:#23a4cc;
+}
+
+p.lead{
+  font-size: 1em;
+  line-height: 1.4;
+}
+h1, h2, h3, h4{
+  font-weight: 700;
+}
+
+h1{
+  font-size:1.4em;
+  line-height: 1.6;
+}
+
+h2{
+  font-size: 1em;
+}
+
+h3{
+
+}
+.btn{
+    background-color: #b21e49;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2.5;
+    text-align: center;
+    box-shadow: 2px 2px 0px #DADADA;
+    height: 2.5em;
+    width: 100%;
+    display: block;
+}
+    .btn:hover{
+        background-color: #ff1256;
+    }
+
+input.btn{
+  background-color: #ff1256;
+}
+  input.btn:hover{
+    background-color: #b21e49;
+  }
+
+
+/*SITE STYLES*/
 /*Header*/
-header{
+.main-header{
   width: 100%;
+  background: #ddd;
 }
 #logo{
   width: 100%;
+  background: #ddd;
   margin: auto;
 }
 nav{
   width: 100%;
-  margin: auto;
+  /*margin: auto;*/
+  background: #ddd;
 }
 li{
-  width: 100%;
-  margin: auto;
-  list-style: none;
+  /*width: 100%;*/
+  /*margin: auto;*/
+  /*list-style: none;*/
+}
+nav ul li a{
+   font-size: 1.125em;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #333;
+}
+nav ul li a:hover{
+   color: #FF1256;
 }
 
 /*Main Content*/
@@ -137,8 +213,13 @@ li{
 .feed{
   width: 100%;
 }
+.feed-type{
+  text-transform: uppercase;
+  margin: auto;
+}
 .feed-item{
   clear: both;
+  border-bottom: 1px solid #cccccc;
 }
 .feed-item p{
   display: none;
@@ -146,6 +227,11 @@ li{
 .feed-item img{
   width: 45%;
   float: left;
+  padding-right: 2%;
+}
+.feed-item-title a{
+  text-decoration: none;
+  color: #333;
 }
 .feed-item-title{
   width: 42%;
@@ -330,14 +416,39 @@ footer {
 
 @media screen and (min-width: 940px){
 /*Desktop*/
+
+    h1{
+        font-size: 1.6em;
+        line-height: 1.8;
+    }
+    h2{
+        font-size: 1.4em;
+    }
+    /*#logo {
+        width: 30%;
+    }
+    nav {
+        width: 60%;
+    }*/
+#logo, nav{
+/*margin-bottom: 2%;*/
+}
+.main-header{
+  overflow-y: auto;
+  margin-bottom: 2%;
+}
+
 .top-story {
+  /*clear: both;*/
   width: 65%;
   float: left;
   border: none;
-  border-right: 1px solid #cccccc;
+  padding-right: 2%;
+
 }
 .top-story img{
   width: 100%;
+  border: 2px solid black;
 }
 
 .top-info{
@@ -349,10 +460,19 @@ footer {
     clear:none;
     width:30%;
     float:right;
-    /*border-left: 1px solid #cccccc;*/
+    border-left: 1px solid #cccccc;
+    padding-left: 2%;
+    padding-bottom: 5%;
   }
   .sidebar .newsletter-sidebar, .sidebar .sidebar-upcoming{
     border-bottom: 1px solid #cccccc;
+    margin-bottom: 2%;
+    padding-bottom: 5%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .sidebar-faq{
+
   }
 
 /* News/Reviews Feed Section =========================== */
@@ -365,15 +485,25 @@ footer {
   }
   .feed-item article{
     display: block;
+    height: auto;
   }
-  .feed-item-title, .feed p{
+  .feed-item article{
+    padding-bottom: 2%;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .feed-item-title, .feed p {
     width: 70%;
     display: inline-block;
-    /*clear: both;*/
+    margin: auto;
+    clear: right;
   }
-  .feed-img, .feed-item img {
+  .feed-img, .feed-item img{
     width: 20%;
-    float: left;
+    height: auto;
+    /*float: left;*/
+    /*clear: left;*/
   }
 
     /* DETAILED PAGES ================================ */
